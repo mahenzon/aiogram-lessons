@@ -39,7 +39,7 @@ async def process_start_command(message: types.Message):
 @dp.message_handler(commands=['help'])
 async def process_help_command(message: types.Message):
     msg = text(bold('Я могу ответить на следующие команды:'),
-               '/voice', '/photo', '/group', '/note', '/file', sep='\n')
+               '/voice', '/photo', '/group', '/note', '/file, /testpre', sep='\n')
     await message.reply(msg, parse_mode=ParseMode.MARKDOWN)
 
 
