@@ -9,12 +9,13 @@
 ### Q&A:
 
 **Q:** Почему [aiogram](http://aiogram.readthedocs.io/en/latest/index.html), а не, например, [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI)?  
-**A:** Автор сам [начинал знакомство с разработкой Телеграм ботов](https://www.gitbook.com/book/groosha/telegram-bot-lessons/details), используя pyTelegramBotAPI, однако поведение библиотеки перестало удовлетворять на больших проектах, у неё странная многопоточность, [FSM](https://en.wikipedia.org/wiki/Finite-state_machine) приходилось создавать самостоятельно \(есть даже [порт FSM из aiogram в pyTelegramBotAPI](https://github.com/Ars2014/FSMTelegramBotAPI)\), плохо реализованное логгирование, aiogram позволяет создавать middleware, например [антифлуд](https://github.com/aiogram/aiogram/blob/master/examples/middleware_and_antiflood.py), ну и просто, [почему нет](https://goo.gl/ngtT8u)?
+**A:** Автор сам [начинал знакомство с разработкой Телеграм ботов](https://www.gitbook.com/book/groosha/telegram-bot-lessons/details), используя pyTelegramBotAPI, однако поведение библиотеки перестало удовлетворять на больших проектах, у неё странная многопоточность, [FSM](https://en.wikipedia.org/wiki/Finite-state_machine) приходилось создавать самостоятельно \(есть даже [порт FSM из aiogram в pyTelegramBotAPI](https://github.com/Ars2014/FSMTelegramBotAPI)\), плохо реализованное логгирование, aiogram позволяет создавать middleware, например то же [логгирование](https://github.com/aiogram/aiogram/blob/master/aiogram/contrib/middlewares/logging.py), [антифлуд](https://github.com/aiogram/aiogram/blob/master/examples/middleware_and_antiflood.py), ну и просто, [почему нет](https://goo.gl/ngtT8u)?
+
 
 ### **Оглавление:**
 
 * [Урок 1. Быстрый старт. Эхо-бот](https://surik00.gitbooks.io/aiogram-lessons/content/chapter1.html)
 * [Урок 2. Медиа, разметка, эмоджи и щепотка логирования](http://surik00.gitbooks.io/aiogram-lessons/content/chapter2.html)
-
+* [Урок 3. Машина состояний и то самое логгирование](http://surik00.gitbooks.io/aiogram-lessons/content/chapter3.html)
 
 
