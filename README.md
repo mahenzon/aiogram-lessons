@@ -18,4 +18,4 @@
 * [Урок 2. Медиа, разметка, эмоджи и щепотка логирования](http://surik00.gitbooks.io/aiogram-lessons/content/chapter2.html)
 * [Урок 3. Машина состояний и то самое логгирование](http://surik00.gitbooks.io/aiogram-lessons/content/chapter3.html)
 * [Урок 4. Платежи в Telegram](http://surik00.gitbooks.io/aiogram-lessons/content/chapter4.html)
-
+* [Урок 5. Клавиатуры и кнопки](http://surik00.gitbooks.io/aiogram-lessons/content/chapter5.html)
