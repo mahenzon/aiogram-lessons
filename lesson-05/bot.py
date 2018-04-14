@@ -84,7 +84,7 @@ async def process_hi6_command(message: types.Message):
 
 @dp.message_handler(commands=['hi7'])
 async def process_hi7_command(message: types.Message):
-    await message.reply("Восьмое - все методы вместе",
+    await message.reply("Седьмое - все методы вместе",
                         reply_markup=kb.markup_big)
 
 
