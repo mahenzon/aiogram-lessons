@@ -14,13 +14,13 @@ dp = Dispatcher(bot)
 ##
 
 
-@dp.callback_query_handler(func=lambda c: c.data == 'button1')
+@dp.callback_query_handler(lambda c: c.data == 'button1')
 async def process_callback_button1(callback_query: types.CallbackQuery):
     await bot.answer_callback_query(callback_query.id)
     await bot.send_message(callback_query.from_user.id, 'Нажата первая кнопка!')
 
 
-@dp.callback_query_handler(func=lambda c: c.data and c.data.startswith('btn'))
+@dp.callback_query_handler(lambda c: c.data and c.data.startswith('btn'))
 async def process_callback_kb1btn1(callback_query: types.CallbackQuery):
     code = callback_query.data[-1]
     if code.isdigit():
