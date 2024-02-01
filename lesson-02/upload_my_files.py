@@ -52,7 +52,8 @@ async def uploadMediaFiles(folder, method, file_attr):
             finally:
                 session.close()
 
-loop = asyncio.get_event_loop()
+loop = asyncio.new_event_loop()
+asyncio.set_event_loop(loop)
 
 tasks = [
     loop.create_task(uploadMediaFiles('pics', bot.send_photo, 'photo')),
