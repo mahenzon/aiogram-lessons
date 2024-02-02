@@ -63,11 +63,11 @@ async def third_or_fourth_test_state_case_met(message: types.Message):
 
 @dp.message_handler(state=TestStates.all())
 async def some_test_state_case_met(message: types.Message):
-    with dp.current_state(user=message.from_user.id) as state:
-        text = MESSAGES['current_state'].format(
-            current_state=await state.get_state(),
-            states=TestStates.all()
-        )
+    state = dp.current_state(user=message.from_user.id)
+    text = MESSAGES['current_state'].format(
+        current_state=await state.get_state(),
+        states=TestStates.all()
+    )
     await message.reply(text, reply=False)
 
 
